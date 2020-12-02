@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <label>146+329=</label>
+       <p id="aa" "background-color:cyan"></p>
+        <label>654-531=</label>
+        <p id="bb"></p><br><br>
+        <label>13*64=</label>
+        <p id="cc"></p><br><br>
+        <label>654/351=</label>
+        <p id="dd"></p><br><br>
+        <button onclick="fun()">Add</button>
+        <button onclick="funa()">Sub</button>
+        <button onclick="funb()">Mult</button>
+        <button onclick="func()">Div</button>
+    </body>
+      <script>
+          var a=146;
+          var b=329;
+          var c=a+b;
+          function fun(){
+              document.getElementById("aa").innerHTML=c;
+          }
+          var e=654;
+          var f=531;
+          var g=e-f;
+          function funa(){
+              document.getElementById("bb").innerHTML=g;
+          }
+          var a1=13;
+          var b1=64;
+          var c1=a1*b1;
+          function funb(){
+              document.getElementById("cc").innerHTML=c1;
+          }
+          var e1=654;
+          var f1=351;
+          var g1=e1/f1;
+          function func(){
+              document.getElementById("dd").innerHTML=g1;
+          }
+      </script>
+</html>

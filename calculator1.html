@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <style>
+         p{
+             background-color: chartreuse;
+         }
+         button{
+             color: darkblue;
+             background-color: orange;
+         }  
+         input{
+             background-color: lime;
+         }    
+         hr{
+             color: blueviolet;
+             border: 3px solid;
+         }
+        </style>
+    </head>
+    <body style="background-color: brown;">
+        <h1 style="text-align: center;">Calculator</h1>
+        <input id="aa"></input>
+        <input id="ab"></input>
+        <p id="a1"></p>
+        <button onclick="sum()">sum</button><br><br>
+        <hr><hr>
+        <input id="ac"></input>
+        <input id="ad"></input>
+        <p id="a2"></p>
+        <button onclick="sub()">sub</button><br><br>
+        <hr><hr>
+        <input id="ae"></input>
+        <input id="af"></input>
+        <p id="a3"></p>
+        <button onclick="mult()">mult</button><br><br>
+        <hr><hr>     
+        <input id="ag"></input>
+        <input id="ah"></input>
+        <p id="a4"></p>
+        <button onclick="div()">div</button><br><br>
+        <hr><hr>
+        <input id="zz">
+        <button onclick="adi()">wbiud</button>
+        <h4 id="re"></h4>
+        <button onclick="fun1()">loop</button>
+        <h1 id="ad">hyetnyyrkjrynethnyuj4y6hy46j7u5jy6j7uh6yj75uh6j7j6</h1>
+    </body>
+    <script>
+        function sum(){ 
+        var a=document.getElementById("aa").value;
+        var b=document.getElementById("ab").value;
+        var c=parseInt(a)+parseInt(b);
+        document.getElementById("a1").innerHTML=c;
+        }
+        function sub(){
+        var a1=document.getElementById("ac").value;
+        var b1=document.getElementById("ad").value;
+        var c1=parseInt(a1)-parseInt(b1);
+        document.getElementById("a2").innerHTML=c1;
+        }
+        function mult(){
+        var a3=document.getElementById("ae").value;
+        var b3=document.getElementById("af").value;
+        var c3=parseInt(a3)*parseInt(b3);
+        document.getElementById("a3").innerHTML=c3;
+        }
+        function div(){
+        var a2=document.getElementById("ag").value;
+        var b2=document.getElementById("ah").value;
+        var c2=parseInt(a2)/parseInt(b2);
+        document.getElementById("a4").innerHTML=c2;
+        }
+     function adi(){
+            var a=document.getElementById("zz").value;
+            if(a>0){
+                document.getElementById("re").innerHTML="It's a positive";
+            }
+            else
+            if(a<0){
+                document.getElementById("re").innerHTML="It's a negative";
+            }
+            else
+            document.getElementById("re").innerHTML="It's a zero";
+        }
+      /*  function fun() {
+            var n="";
+            for (var i=1;i<=10;i++){
+                n=n+"<br>"+i;
+            }
+            document.getElementById("ad").innerHTML=n;
+        }*/
+        function fun1(){                              
+            var a="";
+            for(var j=1;j<10;j++){
+                a=a+j;
+            }
+            document.getElementById("ad").innerHTML=a;
+        }
+    </script>
+</html>

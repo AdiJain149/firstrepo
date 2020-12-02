@@ -1,0 +1,99 @@
+<html>
+    <title>
+        css
+    </title>
+    <style>
+          /* Style the header */
+            .header {
+                background-color: darkcyan;
+                padding: 20px;
+                text-align: center;
+            }
+            /* Style the top navigation bar */
+            .topnav {
+               overflow: hidden;
+               background-color: lime;
+            }
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: red;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* Change color on hover */
+            .topnav a:hover {
+                background-color: yellow;
+                color: #000;
+            }
+            /* Create three unequal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 15px;
+            }
+
+            /* Left and right column */
+            .column.side {
+                width: 25%;
+            }
+            /* Middle column */
+            .column.side {
+                width: 50%;
+            }
+            /* Clear floats after the columns*/
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Responsive layout - makes the three colums stack on the top of each otherinstead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column.side, .column.middle {
+                    width: 100%;
+                }
+            }
+            /* Style the footer */
+            .footer {
+                background-color: cyan;
+                padding: 10px;
+                text-align: center;
+            }
+    </style>
+    <head>
+        <body>
+           <div class="header">
+             <h1>Science</h1>
+             <p>Physics notes for CBSE class-9th</p>
+           </div>
+            
+           <div class="topnav">
+               <a href="#">Link</a>
+               <a href="#">Link</a> 
+               <a href="#">Link</a>
+               <div class="row">
+                <div class="column">
+                <h2>Force</h2>
+                <p>A force is a push or pull upon an object resulting from the object's interaction with another object. Whenever there is an interaction between two objects, there is a force upon each of the objects.
+                </p> 
+
+                <div class="coulmn">
+                  <h2>Gravitational Force</h2>
+                  <p>The gravitational force is a force that attracts any two objects with mass. We call the gravitational force attractive because it always tries to pull masses together, it never pushes them apart. In fact, every object, including you, is pulling on every other object in the entire universe!
+                  </p>
+                </div>
+                <div class="column">
+                   <h2>Motion</h2>
+                   <p>
+                    In physics, motion is the phenomenon in which an object changes its position over time. Motion is mathematically described in terms of displacement, distance, velocity, acceleration, speed, and time. ... One can also speak of motion of images, shapes and boundaries.
+                   </p>
+                </div>
+           </div>
+           <div class="footer">
+              <p>Footer</p>
+           </div>
+        </body>
+    </head>
+</html>
